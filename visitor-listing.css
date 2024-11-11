@@ -1,0 +1,301 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a2829;
+    color: rgb(216, 216, 168);
+    font-family: 'Roboto', sans-serif; 
+}
+
+.navbar {
+    background-color: rgba(107, 103, 103, 0.432);
+    color: white;
+    height: 70px;
+    padding: 0 15px; 
+}
+
+.navbar-brand {
+    margin-right: auto; 
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+a.nav-link {
+    color: rgb(216, 216, 168);
+}
+
+.logo {
+    width: 321px;
+    padding-top: 29px;
+    margin-left: -112px;
+}
+
+@media (max-width: 991.98px) {
+    .logo {
+        width: 250px; 
+        margin-left: 0;
+        padding-top: 15px; 
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+.listing-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Filter Icon Button */
+.filter-icon {
+    background-color: transparent; 
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: rgb(216, 216, 168);
+    border: none;
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.filter-panel {
+    position: fixed; /* Fixed position to keep it in view */
+    top: 0; /* Align to the top of the viewport */
+    right: -80%; /* Start off-screen (hidden) */
+    width: 30%; /* Width of the panel set to 20% */
+    height: 100%; /* Full height of the viewport */
+    max-height: 100%; /* Ensure it doesn't exceed the viewport height */
+    background-color: #2a2829d3; /* Background color */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5); /* Shadow effect */
+    transition: right 0.3s ease; /* Smooth transition for opening/closing */
+    z-index: 999; /* Stack above other elements */
+    padding: 20px; /* Padding for the content */
+    box-sizing: border-box; /* Include padding in width calculation */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+.filter-panel.open {
+    right: 0; /* Move to visible position when open */
+}
+
+
+
+/* Filter Form */
+.filter-header {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.filter-header button {
+    background: none;
+    border: none;
+    font-size: 30px;
+    color: rgb(216, 216, 168);
+    cursor: pointer;
+}
+
+#filter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; /* Space between form elements */
+    margin-top: 20px;
+    align-items: left;
+}
+
+
+#filter-form label {
+    font-size: 16px;
+}
+
+#filter-form input,
+#filter-form select {
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #3a393a;
+    color: rgb(216, 216, 168);
+    width: 54%;
+}
+
+#filter-form button {
+       
+    border-radius: 2px;
+    cursor: pointer;
+    width: 23%;
+    margin-top: 81px;
+    margin-left: 283px;
+    height: 62px;
+    font-size: 55px;
+}
+
+
+#filter-form button:hover {
+    color: #ffd4b3;
+    background-color:#3a393a;
+   
+}
+.card {
+    background-color: #f5e0c3; /* Light background */
+    border-radius: 10px;
+    overflow: hidden;
+    width: 546px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px); 
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover; 
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.artist-name {
+    font-family: 'Cursive', sans-serif; 
+    font-size: 18px;
+    color: #8a6955;
+    margin: 0;
+}
+
+.item-title {
+    font-size: 16px;
+    color: #444;
+    margin: 10px 0 5px;
+}
+
+.item-description {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+}
+
+.price-tag {
+    position: absolute;
+    top: 215px;
+    right: 10px;
+    background-color: #8a6955;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+.listing-cards{
+    margin-top: 65px;
+}
+.price-range {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+/* Style for Min and Max Inputs */
+.price-range input {
+    width: 48%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    font-size: 14px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.price-range input:focus {
+    border-color: #f05454;
+    outline: none;
+}
+ .apply-filters{
+    width: 50%;
+    margin-top: 42px;
+    background-color: rgb(216, 216, 168);
+    color: brown;
+    font-size: 20px;
+ }
+
+ .h1-title {
+    
+    margin-bottom: 87px;
+    font-size: 32px;
+}
+
+hr {
+    border: none; 
+    border-top: 5px solid  rgb(216, 216, 168); 
+    margin: 20px 0; 
+    width: 100%; 
+}
+
+.apply-button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #7e685a; 
+    color: #ffffff; 
+    position: relative;
+}
+
+.check-icon {
+    display: inline-flex; 
+    align-items: center;
+    justify-content: center; 
+    color: #ffffff;
+    border-radius: 3px; 
+    padding: 5px; 
+    width: 40px; 
+    height: 30px; 
+    text-align: center; 
+    
+}
+
+
+/* Mobile Adjustments */
+.navbar-toggler{
+    background:#d74127;
+    width: 44px;
+    padding: 4px;
+    margin-bottom: 20px;
+}
+
+/* Ensure logo is aligned left */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+
+
+@media (max-width: 480px) {
+    .navbar-brand img {
+        max-width: 147px;
+        margin-left: -56px;
+        margin-top: -39px;
+    }
+}       

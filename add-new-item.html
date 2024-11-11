@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add/Edit Item</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="add-new-item.css"> 
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar bg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="landing-page.html">
+                    <img src="gallery/logo.png" alt="Logo" class="logo">
+            
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="artist-homepage.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="artist-Itempage.html">Items</a>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Form Container for Checkbox -->
+        <div class="form-container">
+            <div class="header-row">
+                <h1 id="form-title">Add New Item</h1>
+                <label for="isPublished" class="checkbox-label">
+                    <h2 id="form-title2">Is Published</h2>
+                    <input type="checkbox" id="isPublished" name="isPublished" checked>
+
+                </label>
+            </div>
+        </div>
+        
+        
+            
+            <!-- Form to add/edit item -->
+            <form id="item-form">
+                <label for="title">Title <span class="required">*</span></label>
+                <input type="text" id="title" placeholder="Title" required>
+                
+                <!-- Description input -->
+                <label for="description">Description</label>
+                <textarea id="description" placeholder="Description"></textarea>
+    
+                <div class="fields-row">
+                    <div class="field">
+                        <label for="type">Type:</label>
+                        <input type="text" id="type" name="type">
+                    </div>
+                    <div class="field">
+                        <label for="price">Price:</label>
+                        <input type="text" id="price" name="price">
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="snapshot-area" id="snapshotButton">
+                        <div class="snapshot-text">
+                            <i class="fa-sharp fa-solid fa-camera"></i>
+                        </div>
+                        <p>Take a snapshot</p>
+                        <input type="file" id="fileInput" accept="image/*" style="display: none;">
+                        <img id="snapshotPreview" src="" alt="Snapshot Preview" style="display: none;">
+                    </div>
+                    <div class="buttons">
+                        <button id="addButton">Add New Card</button>
+
+
+                        <button type="button" id="cancelButton">Cancel</button>
+                    </div>
+                </div>
+        
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="add-new-item.js"></script>
+    
+    </body>
+    </html>
+    

@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2a2829;
+    color: rgb(216, 216, 168);
+    font-family: 'Roboto', sans-serif; 
+}
+
+.navbar {
+    background-color: rgba(107, 103, 103, 0.432);
+    color: white;
+    height: 70px;
+    padding: 0 15px; 
+}
+.navbar-brand {
+    margin-right: auto; 
+}
+
+.navbar-nav {
+    margin-left: auto; 
+}
+
+a.nav-link {
+    color: rgb(216, 216, 168);
+}
+
+.logo {
+    width: 321px;
+    padding-top: 29px;
+    margin-left: -112px;
+}
+
+@media (max-width: 991.98px) {
+    .logo {
+        width: 250px; 
+        margin-left: 0;
+        padding-top: 15px; 
+    }
+}
+
+
+.dashboard {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 45px;
+    margin-top: 60px;
+}
+
+.widget {
+    background-color: rgb(216, 216, 168);
+    padding: 20px;
+    text-align: center;
+    border-radius: 3px;
+    width: 30%;
+    color: white;
+}
+
+.auction-widget {
+    background-color:#d95f4d;
+    color: white;
+}
+
+h3 {
+    margin: 0;
+    font-size: 18px;
+}
+h2{
+    font-size: 2rem;
+    color: #d95f4d;
+    margin-bottom: 31px;
+    margin-top: 12px;
+}
+p {
+    margin: 10px 0 0;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.chart-container {
+    background-color: #d8d8a8;
+    padding: 32px;
+    border-radius: 3px;
+    height: 593px;
+}

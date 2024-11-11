@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #2a2829; 
+    font-family: 'Roboto', sans-serif;
+    color: rgba(219, 219, 196, 0.938);
+    height: 100vh;
+  }
+  
+  #artistSelect {
+    font-family: 'Roboto', sans-serif;  
+    font-size: 16px; 
+    color: #333;  
+  }
+  
+  /* Logo Section */
+  .logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 3rem;
+    padding-left: 20px;
+  }
+  
+  .logo-img {
+    width: 80px;
+    height: auto;
+  }
+  
+  img, svg {
+    vertical-align: middle;
+    margin-top: -161px;
+    margin-bottom: -120px;
+    width: 100%; 
+    max-width: 600px; 
+  }
+  
+  .logo-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 1rem;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* Main Section */
+  main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 5rem; 
+    margin-top: 30px;
+  }
+  
+  /* Card Container */
+  .card-container {
+    position: relative;
+    width: 320px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+    margin-top: 10px;
+  }
+  
+  .card-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #d9c6c6;
+    font-family: 'Cursive', sans-serif;
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  /* Artist Card */
+  .card-artist {
+    background-color: rgb(102, 45, 144);
+    z-index: 2;
+    transform: rotate(-22deg);
+    text-align: center;
+    margin-right: 167px;
+    box-shadow: 0px 10px 11px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card-artist:hover {
+    transform: rotate(0deg);
+    box-shadow: 0px 10px 20px rgb(196, 101, 191);
+  }
+  
+  /* Visitor Card */
+  .card-visitor {
+    background-color: #f7941d;
+    transform: rotate(20deg);
+    text-align: center;
+    margin-left: 133px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    margin-left: 186px;
+    font-size: 2rem;
+  }
+  
+  .card-visitor:hover {
+    transform: rotate(0deg);
+    box-shadow: 0px 10px 15px rgb(248, 245, 49);
+  }
+  
+  /* Dropdown Styling */
+  .form-select {
+    width: 80%;
+    background-color: #f2e6d9;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  .form-select:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Mobile Responsive */
+  @media (max-width: 480px) {
+    .card-container {
+      width: 100%;
+      height: auto;
+      flex-direction: column;
+      margin-top: 1rem;
+      font-size: 20px;
+    }
+    @media (max-width: 768px) {
+      .card-layer {
+        width: 48%;
+        height: 170px;
+  
+      }
+  }
+  
+  @media (max-width: 480px) {
+    img, svg {
+        width: 100%;
+        max-width: 278px;
+        margin-top: -81px;
+        margin-bottom: 29px;
+    }
+  }
+  h2 {
+    margin-left: 32px;
+  }
+  @media (max-width: 380px) {
+    h2 {
+      font-size: 18px;
+      margin-top: 85px;
+      margin-left: 30px;
+    }
+  }
+  
+  #artistSelect {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #333;
+  }
+  .form-select {
+    width: 173%;
+    background-color: #f2e6d9;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem;
+    font-size: -2rem;
+    margin-left: -100px;
+    margin-bottom: 64px;
+  }
+  
+    .logo-container {
+      padding-left: 10px; 
+      margin-top: 1.5rem; 
+    }
+  
+    .logo-text {
+      font-size: 1.5rem; 
+      margin-left: 0.5rem; 
+    }
+  
+    img, svg {
+      width: 100%; 
+      max-width: 300px; 
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  
+    p {
+      font-size: 1.5rem; 
+      margin-left: 0;
+    }
+  }
+  

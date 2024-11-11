@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visitor Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="visitor-homepage.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar bg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="landing-page.html">
+                <img src="gallery/logo.png" alt="Logo" class="logo">
+        
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="visitor-homepage.html">Visitors Homepage </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="visitor-listing.html">Vistors Listing Page</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="text">
+        <h2 class="looking-for">Looking for a masterpiece?</h2>
+        <button class="btn btn-warning" onclick="location.href='find-masterpiece.html'">Find One Now</button>
+    </div>
+    
+    <!-- Sliders -->
+    <section class="sliders">
+        <div class="row slider-row">
+            <div class="row slider-row">
+                <div class="col-12 first-row">
+                    <img src="gallery/image a.jpg" alt="Art 1" onclick="location.href='visitor-listing.html'">
+                    <img src="gallery/image d.jpg" alt="Art 5" onclick="location.href='visitor-listing.html'">
+                    <img src="gallery/image c.jpg" alt="Art 3" onclick="location.href='visitor-listing.html'">
+                    <img src="gallery/image f.jpg" alt="Art 7" onclick="location.href='visitor-listing.html'">
+                    <img src="gallery/image q.jpg" alt="Art 4" onclick="location.href='visitor-listing.html'">
+                   
+                    
+                    
+                   
+                </div>
+            </div>
+            <div class="row slider-row">
+                <div class="col-12 second-row">
+                    <img src="gallery/image t.jpg" alt="Art 2" onclick="location.href='visitor-listing.html'">
+                    <img src="gallery/image e.jpg" alt="Art 6" onclick="location.href='visitor-listing.html'">
+                    <img src="gallery/image k.jpg" alt="Art 8" onclick="location.href='visitor-listing.html'">
+                    <img src="gallery/image m.jpg" alt="Art 8" onclick="location.href='visitor-listing.html'">
+                    <img src="gallery/image th.jpg" alt="Art 8" onclick="location.href='visitor-listing.html'">
+               
+            </div>
+        </div>
+    </section>
+
+    <!-- Carousel -->
+    <div class="carousel-container">
+        <div class="carousel-section">
+            <div class="carousel">
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="gallery/image a1.png" class="profile-img" alt="Profile 1">
+                        <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam erat volutpat.</p>
+                    </div>
+                    
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel-content">
+
+                        <img src="gallery/image1.jpg" class="profile-img" alt="Profile 2">
+                        <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam erat volutpat.
+                             </p>
+                    </div>
+                </div>
+                
+                <div class="carousel-item">
+                    <div class="carousel-content">
+                        <img src="gallery/image2.jpg" class="profile-img" alt="Profile 3">
+                        <p class="carousel-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.Aliquam erat volutpat.
+                            </p>
+                    </div>
+                </div>
+            </div>
+    
+           
+           <button class="carousel-button prev" id="prevButton">&#10094;</button>
+            <button class="carousel-button next" id="nextButton">&#10095;</button>
+        </div>
+    
+        <!-- Right section for additional text -->
+        <div class="carousel-text-section">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec dolor ac leo placerat vehicula. </p>
+
+    </div>
+    </div>
+      
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="visitor-homepage.js"></script>
+</body>
+
+</html>
